@@ -1,0 +1,19 @@
+- name: pranit
+dob: "16-02-1998"
+ address:
+  addressline1: pavan
+  addressline2: santosh
+  city: hyderabad
+ email: j@gmail.com
+
+ -name: karthik
+  dob: "02-20-2020"
+  address:
+   - addressline1: pavan2
+     addressline2: santosh2
+     city: bombay
+   - addressline3: pavan3
+     addressline3: santosh3
+     city: thailand
+
+  email: k@gmail.com
