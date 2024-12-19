@@ -1,0 +1,10 @@
+- name: variable declaring step-1
+  hosts: localhost
+  vars: 
+   course: "devops"
+   trainer: "siva"
+   duration: "110hrs"
+  tasks:
+  - name: variables
+    ansible.builtin.debug:
+     msg: "iam learning {{course}},trainer is {{trainer}},duration {{duration}}"
