@@ -4,6 +4,11 @@
 [localhost]
 localhost
 
+[localhost:vars] 
+course= "devops from inventory"
+trainer= "siva"
+duration= "110hrs"
+
 [web]
 34.201.138.168
 
