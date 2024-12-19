@@ -12,11 +12,11 @@
      msg: "details: {{user}}"
   
   - name: print exit status or return code
-    ansible.builtin.package:
-      msg: "exit status:{{user.rc}}"
+    ansible.builtin.debug:
+      msg: "exit status: {{user.rc}}"
   
   - name: creation of user
     ansible.builtin.user:
      name: roboshop
-    when: user.rc!=0
+    when: user.rc != 0
      
