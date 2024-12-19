@@ -1,7 +1,7 @@
 - name: advanced loop
   hosts: localhost
   become: yes
-  taks:
+  tasks:
   - name: install and uninstall
     ansible.builtin.package:
      name: "{{item.name}}"
