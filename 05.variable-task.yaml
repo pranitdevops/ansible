@@ -6,8 +6,8 @@
    duration: "110hrs"
   tasks:
   - name: variables 
-    course: "aws devops"
+    vars:
+     course: "aws devops"
     ansible.builtin.debug:
      msg: "iam learning {{course}},trainer is {{trainer}},duration {{duration}}" 
 
-     
