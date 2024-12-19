@@ -1,0 +1,22 @@
+- name: conditions
+  hosts: web
+  become: yes
+  tasks:
+  - name: check user there or not
+    ansible.builtin.command: id roboshop
+    register: user
+    ignore_errors: true
+
+  - name: print the user
+    ansible.builtin.debug:
+     msg: "details: {{user}}"
+  
+  - name: print exit status or return code
+    ansible.builtin.package:
+      msg: "exit status:{{user.rc}}"
+  
+  - name: creation of user
+    ansible.builtin.user:
+     name: roboshop
+    when: user.rc!=0
+     
